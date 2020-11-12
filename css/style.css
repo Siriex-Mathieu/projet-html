@@ -1,4 +1,7 @@
 body{
     text-align: center;
 color:white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
 }
