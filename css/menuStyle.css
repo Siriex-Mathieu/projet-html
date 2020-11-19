@@ -42,7 +42,7 @@ nav ul{
     padding: 0px;
     margin: 0px;
     list-style-type:none;
-    background: linear-gradient(to bottom right , #018D9B, #0017BD);
+    background: linear-gradient(to bottom right ,rgb(6,135,255),rgb(2,73,151));
     text-align:center;
     position: fixed;
     top: 0px;
@@ -62,7 +62,6 @@ nav ul li{
 }
 
 nav a{
-    font-family: googlesans;
     display:block;
     text-decoration:none;
     color:#FFFFFF;
