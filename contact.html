@@ -6,11 +6,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/menuStyle.css">
 </head>
-<body background="image/fond.jpg">
+<body>
 <header>
         <nav id="debut">
           <ul>
-            <li><a href="index.html">Produit</a></li>
+            <li><a href="produit.html">Produit</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="equipe.html">Equipe</a></li>
             <li><a href="presse.html">Presse</a></li>
@@ -25,7 +25,7 @@
           </ul>
         </nav>
         </header>
-<form style="margin-top: 20px" action="sendToDataBase.php" method="get">
+<form action="sendToDataBase.php" method="get">
     <h1>Contactez-nous</h1>
     <div id="ligne"></div>
     <fieldset>
@@ -275,9 +275,9 @@
         <legend>Informations supplémentaires</legend>
         <label>Vous avez entendu parler de nous via ?</label>
         <div style="display: block;">
-            <input style="display: inline;" type="checkbox" name="reponse1" value="viainternet"> Internet<br>
-            <input style="display: inline;" type="checkbox" name="reponse2" value="viaconnaissances"> Quelqu'un<br>
-            <input style="display: inline;" type="checkbox" name="reponse3" value="viaautre" checked> Autre<br><br>
+            <input type="checkbox" name="reponse1" value="viainternet"> Internet<br>
+            <input type="checkbox" name="reponse2" value="viaconnaissances"> Quelqu'un<br>
+            <input type="checkbox" name="reponse3" value="viaautre" checked> Autre<br><br>
         </div>
         <label for="datecontact">Date à laquelle vous souhaitez être recontacté : </label>
         <input type="date" name="datecontact">
