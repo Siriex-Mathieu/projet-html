@@ -1,0 +1,94 @@
+@media screen and (max-width: 1374px){
+    nav{
+        height:150px;
+    }
+}
+
+@media screen and (max-width: 914px){
+    nav{
+        height:200px;
+    }
+}
+
+@media screen and (max-width: 684px){
+    nav{
+        height:250px;
+    }
+}
+
+@media screen and (max-width: 456px){
+    nav{
+        height:300px;
+    }
+    .sous{
+        position:relative;
+    }
+}
+
+@media screen and (min-width: 456px){
+    .sous{
+        position: absolute;
+        margin-top:50px;
+    }
+}
+
+@media screen and (min-width: 1375px){
+    nav{
+        height:100px;
+    }
+}
+
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style-type:none;
+    background: linear-gradient(to bottom right , #018D9B, #0017BD);
+    text-align:center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    box-shadow: 0 4px 12px -2px black;
+
+}
+
+nav ul li{
+    display:inline-block;
+    width:224.8px;
+    position: relative;
+    border-right:0px solid #CCCCC;
+    text-align:center;
+    line-height:50px;
+}
+
+nav a{
+    font-family: googlesans;
+    display:block;
+    text-decoration:none;
+    color:#FFFFFF;
+    text-transform: uppercase;
+}
+
+nav li :hover{
+    background-color: rgba(188, 188, 188, 0.3);  
+    font-size: 15px;
+    border-bottom: 1px solid white;         
+    }
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    width: 100%;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    width: 100%;
+    text-align: center;
+}
+.sous a{
+    padding: 5px;
+}
+
