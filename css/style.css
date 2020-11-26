@@ -6,6 +6,9 @@ body {
     background-position: fixed;
     background-image: url("../image/fond2.png");
 }
+
+/* comment */
+
 h3{
 color:white;
 }
@@ -16,4 +19,39 @@ color:white;
 }
 .sautdeligne{
     style="white-space:pre";
+}
+
+.pagerj{
+    display: flex;
+    justify-content: center;
+}
+.pagerj > div{
+    width: 70%;
+    background-color: gray;
+    box-shadow: 10px 5px 5px black;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.espacegros{
+    height: 50px;
+}
+
+#map{
+    width: 300px;
+    height: 225px ;
+}
+
+#baspgrj{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#contactrj{
+    text-align: left;
+}
+#contactrj > p {
+    margin-left: 5px;
 }
