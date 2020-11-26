@@ -10,6 +10,10 @@ h3{
 color:white;
 }
 
+h1{
+    background: linear-gradient(to bottom right ,rgb(6,135,255), black);
+}
+
 .formcandi{
     text-align: center;
     
