@@ -4,27 +4,27 @@
     <meta charset="utf-8">
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/menuStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/menuStyle.css">
 </head>
 <body>
 <header>
-        <nav id="debut">
-          <ul>
+    <nav id="debut">
+        <ul>
             <li><a href="produit.html">Produit</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="equipe.html">Equipe</a></li>
             <li><a href="presse.html">Presse</a></li>
             <li class="deroulant"><a href="#">Nous Rejoindre ▼</a>
-              <ul class="sous">
-                <li><a href="nousrejoindre/developpeur.html">Développeur</a></li>
-                <li><a href="nousrejoindre/datamanager.html">Data manager</a></li>
-                <li><a href="nousrejoindre/webdesigner.html">Web designer</a></li>
-              </ul>
+                <ul class="sous">
+                    <li><a href="nousrejoindre/developpeur.html">Développeur</a></li>
+                    <li><a href="nousrejoindre/datamanager.html">Data manager</a></li>
+                    <li><a href="nousrejoindre/webdesigner.html">Web designer</a></li>
+                </ul>
             </li>
             <li><a href="faq.html">FAQ</a></li>
-          </ul>
-        </nav>
-        </header>
+        </ul>
+    </nav>
+</header>
 <form action="sendToDataBase.php" method="get">
     <h1>Contactez-nous</h1>
     <div id="ligne"></div>
@@ -275,15 +275,15 @@
         <legend>Informations supplémentaires</legend>
         <label>Vous avez entendu parler de nous via ?</label>
         <div style="display: block;">
-            <input type="checkbox" name="reponse1" value="viainternet"> Internet<br>
-            <input type="checkbox" name="reponse2" value="viaconnaissances"> Quelqu'un<br>
-            <input type="checkbox" name="reponse3" value="viaautre" checked> Autre<br><br>
+            <div class="sautdeligne"><input type="checkbox" name="reponse1" value="viainternet"> Internet</div>
+            <div class="sautdeligne"><input type="checkbox" name="reponse2" value="viaconnaissances"> Quelqu'un</div>
+            <div class="sautdeligne"><input type="checkbox" name="reponse3" value="viaautre" checked> Autre</div>
         </div>
         <label for="datecontact">Date à laquelle vous souhaitez être recontacté : </label>
         <input type="date" name="datecontact">
-        <br>
-        <label for="msglibre">Message facultatif :</label>
-        <br>
+        <div class="sautdeligne">
+            <label for="msglibre">Message facultatif :</label>
+        </div>
         <textarea name="msglibre" rows="5" cols="25"
                   placeholder="Si vous avez des informations additionnelles à faire savoir, vous pouvez écrire ici..."></textarea>
     </fieldset>

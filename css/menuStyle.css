@@ -10,6 +10,7 @@
     }
 }
 
+
 @media screen and (max-width: 684px){
     nav{
         height:250px;
@@ -69,10 +70,10 @@ nav a{
 }
 
 nav li :hover{
-    background-color: rgba(188, 188, 188, 0.3);  
+    background-color: rgba(188, 188, 188, 0.3);
     font-size: 15px;
-    border-bottom: 1px solid white;         
-    }
+    border-bottom: 1px solid white;
+}
 
 .sous{
     display: none;
