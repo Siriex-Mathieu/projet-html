@@ -1,10 +1,19 @@
 body {
     text-align: center;
     color: white;
-    background-size: 100%;
+  background-size: 100%;
     background-repeat: no-repeat;
     background-position: fixed;
+    background-image: url("../image/fond.jpg");
 }
 h3{
 color:white;
+}
+
+.formcandi{
+    text-align: center;
+    
+}
+.sautdeligne{
+    style="white-space:pre";
 }
