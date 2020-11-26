@@ -12,7 +12,7 @@ h3 {
 }
 
 h1 {
-    background: linear-gradient(to bottom right, rgb(6, 135, 255), black);
+    background: linear-gradient(to bottom right, black, #0447B5 ,black);
 }
 
 .formcandi {
@@ -29,7 +29,7 @@ h1 {
     width: 100%;
     max-width: 300px;
     margin-bottom: 30px;
-    background: linear-gradient(to bottom right, rgb(6, 135, 255), black);
+    background: linear-gradient(to bottom right, black, #0447B5 ,black);
     border-radius: 30%;
     margin: auto;
 }
@@ -45,7 +45,7 @@ h1 {
 }
 
 .actualites .actu {
-    background: linear-gradient(to bottom right, rgb(6, 135, 255), black);
+    background: linear-gradient(to bottom right, black, #0447B5 ,black);
     height: 200px;
     margin: 50px 2%;
     flex: 1;
@@ -72,9 +72,6 @@ h1 {
 }
 
 .question{
-    background: linear-gradient(to bottom right, rgb(6, 135, 255), black);
+    background: linear-gradient(to bottom right, black, #0447B5 ,black);
 }
 
-.reponse{
-    background: linear-gradient(to bottom right, rgb(6, 135, 255), black);
-}

@@ -43,7 +43,7 @@ nav ul{
     padding: 0px;
     margin: 0px;
     list-style-type:none;
-    background: linear-gradient(to bottom right ,rgb(6,135,255),black);
+    background: linear-gradient(to bottom right, black, #0447B5 ,black);
     text-align:center;
     position: fixed;
     top: 0px;
