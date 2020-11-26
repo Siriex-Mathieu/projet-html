@@ -1,23 +1,80 @@
 body {
     text-align: center;
     color: white;
-  background-size: 100%;
+    background-size: 100%;
     background-repeat: repeat;
     background-position: fixed;
     background-image: url("../image/fond2.png");
 }
-h3{
-color:white;
+
+h3 {
+    color: white;
 }
 
-h1{
-    background: linear-gradient(to bottom right ,rgb(6,135,255), black);
+h1 {
+    background: linear-gradient(to bottom right, rgb(6, 135, 255), black);
 }
 
-.formcandi{
+.formcandi {
     text-align: center;
-    
+
 }
-.sautdeligne{
-    style="white-space:pre";
+
+.sautdeligne {
+    style = "white-space:pre";
+}
+
+#ligne {
+    height: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom right, rgb(6, 135, 255), black);
+    border-radius: 30%;
+    margin: auto;
+}
+
+#presentation {
+    font-size: 20px;
+    margin: 30px 5%;
+    text-align: center;
+}
+
+.actualites {
+    display: flex;
+}
+
+.actualites .actu {
+    background: linear-gradient(to bottom right, rgb(6, 135, 255), black);
+    height: 200px;
+    margin: 50px 2%;
+    flex: 1;
+    transition: transform .2s;
+}
+
+.actualites .actu:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.actualites .actu h2 {
+    padding: 10px;
+    background-color: white;
+    color: rgb(6, 135, 255);
+    text-align: right;
+}
+
+.actualites .actu h3 {
+    text-align: center;
+    font-family: "googlesans";
+    font-size: 40px;
+    color: white;
+}
+
+.question{
+    background: linear-gradient(to bottom right, rgb(6, 135, 255), black);
+}
+
+.reponse{
+    background: linear-gradient(to bottom right, rgb(6, 135, 255), black);
 }
