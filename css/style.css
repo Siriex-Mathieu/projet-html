@@ -6,14 +6,109 @@ body {
     background-position: fixed;
     background-image: url("../image/fond2.png");
 }
-h3{
-color:white;
+
+/* comment */
+
+h3 {
+    color: white;
 }
 
-.formcandi{
-    text-align: center;
-    
+h1 {
+    background: linear-gradient(to bottom right, black, #0447B5 ,black);
 }
-.sautdeligne{
-    style="white-space:pre";
+
+.formcandi {
+    text-align: center;
+
+}
+
+.sautdeligne {
+    style = "white-space:pre";
+}
+
+#ligne {
+    height: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom right, black, #0447B5 ,black);
+    border-radius: 30%;
+    margin: auto;
+}
+
+#presentation {
+    font-size: 20px;
+    margin: 30px 5%;
+    text-align: center;
+}
+
+
+.pagerj{
+    display: flex;
+    justify-content: center;
+}
+.pagerj > div{
+    width: 70%;
+    background-color: gray;
+    box-shadow: 10px 5px 5px black;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.espacegros{
+    height: 50px;
+}
+
+#map{
+    width: 300px;
+    height: 225px ;
+}
+
+#baspgrj{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#contactrj{
+    text-align: left;
+}
+#contactrj > p {
+    margin-left: 5px;
+}
+
+.actualites {
+    display: flex;
+}
+
+.actualites .actu {
+    background: linear-gradient(to bottom right, black, #0447B5 ,black);
+    height: 200px;
+    margin: 50px 2%;
+    flex: 1;
+    transition: transform .2s;
+}
+
+.actualites .actu:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.actualites .actu h2 {
+    padding: 10px;
+    background-color: white;
+    color: rgb(6, 135, 255);
+    text-align: right;
+}
+
+.actualites .actu h3 {
+    text-align: center;
+    font-family: "googlesans";
+    font-size: 40px;
+    color: white;
+}
+
+.question{
+    background: linear-gradient(to bottom right, black, #0447B5 ,black);
 }
