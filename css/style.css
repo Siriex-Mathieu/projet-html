@@ -23,7 +23,7 @@ h1 {
 }
 
 .sautdeligne {
-    style = "white-space:pre";
+    style : "white-space:pre";
 }
 
 #ligne {
