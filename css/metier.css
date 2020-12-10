@@ -1,0 +1,26 @@
+
+.choixmetier{
+    background-color: #0447B5;
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    text-align:center;
+}
+
+.choixmetier a {
+    color : white;    
+    text-decoration:none;
+}
+
+.choixmetier a:visited{
+    color : white;
+}
+
+.menuchoixmetier {
+    list-style-type:none;
+}
+
+.menumetier{
+    text-align:center;
+    position: fixed;
+}
