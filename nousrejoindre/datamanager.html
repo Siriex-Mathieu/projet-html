@@ -6,6 +6,7 @@
     <title>Nous rejoindre : data manager</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/menuStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/metier.css">
 </head>
 
 <body>
@@ -23,47 +24,45 @@
     </header>
 
     <!-- titre milieu de page en haut -->
-    <h1>Le poste de data manager</h1> 
+    <h1>Le poste de data manager</h1>
 
     <!-- Formulaire de candidature-->
     <form action="candidatures.php" method="get">
         <fieldset>
             <legend>Informations personnelles</legend>
-        <div class="formcandi"><label for="surname">Nom</label></div>
-        <div class="formcandi"><input id="surname" name="uname" type="text"></div>
-        
-        <div class="formcandi"><label for="firstname">Prénom</label></div>
-        <div class="formcandi"><input id="firstname" name="firstname" type="text"></div>
+            <div class="formcandi"><label for="surname">Nom</label></div>
+            <div class="formcandi"><input id="surname" name="uname" type="text"></div>
 
-        <div class="formcandi"><label for="sexe">Sexe</label></div>
-        <div class="formcandi"><input id="sexe" name="sexe" type="radio"></div>
-        
-        <div class="formcandi"><label for="datenaiss">Date de naissance</label></div>
-        <div class="formcandi"><input id="datenaiss" name="date de naissance" type="date"></div>
+            <div class="formcandi"><label for="firstname">Prénom</label></div>
+            <div class="formcandi"><input id="firstname" name="firstname" type="text"></div>
 
-        <div class="formcandi"><label for="email">Email</label></div>
-        <div class="formcandi"> <input id="email" name="email" type="email"> </div>
+            <div class="formcandi"><label for="sexe">Sexe</label></div>
+            <div class="formcandi"><input id="sexe" name="sexe" type="radio"></div>
 
-        <div class="formcandi"><label for="diplome">Formations et diplômes</label></div>
-        <div class="formcandi"><textarea id="diplome" rows="5" cols="25"
-            placeholder="Vos diplômes et vos formations..."></textarea></div>
+            <div class="formcandi"><label for="datenaiss">Date de naissance</label></div>
+            <div class="formcandi"><input id="datenaiss" name="date de naissance" type="date"></div>
 
-        <div class="formcandi"><label for="adress">Lieu de résidence</label></div>
-        <div class="formcandi"><input id="address" name="adress" type="text"></div>
+            <div class="formcandi"><label for="email">Email</label></div>
+            <div class="formcandi"> <input id="email" name="email" type="email"> </div>
+
+            <div class="formcandi"><label for="diplome">Formations et diplômes</label></div>
+            <div class="formcandi"><textarea id="diplome" rows="5" cols="25" placeholder="Vos diplômes et vos formations..."></textarea></div>
+
+            <div class="formcandi"><label for="adress">Lieu de résidence</label></div>
+            <div class="formcandi"><input id="address" name="adress" type="text"></div>
         </fieldset>
-        
+
         <fieldset>
-            <legend>Informations de candidature</legend>        
-        <div class="formcandi"><label for="exptime">Temps d'éxpérience</label></div>
-        <div class="formcandi"><input id="exptime" name="exptime" type="text"></div>
+            <legend>Informations de candidature</legend>
+            <div class="formcandi"><label for="exptime">Temps d'éxpérience</label></div>
+            <div class="formcandi"><input id="exptime" name="exptime" type="text"></div>
 
-        <div class="formcandi"><label for="whynot">Pourquoi vous et non une autre personne ?</label></div>
-        <div class="formcandi"><textarea id="whynot" rows="15" cols="50"
-            placeholder="Expliquez pourquoi nous devrions vous choisir..."></textarea></div>
+            <div class="formcandi"><label for="whynot">Pourquoi vous et non une autre personne ?</label></div>
+            <div class="formcandi"><textarea id="whynot" rows="15" cols="50" placeholder="Expliquez pourquoi nous devrions vous choisir..."></textarea></div>
 
-        <div class="formcandi"><label for="explproj">Exemple de projet déjà fait</label></div>
-        <div class="formcandi"><textarea name="explproj" rows="15" cols="50"
-                placeholder="Décrivez ici un ou plusieurs projets que vous avez fait par le passé..."></textarea></div>
+            <div class="formcandi"><label for="explproj">Exemple de projet déjà fait</label></div>
+            <div class="formcandi"><textarea name="explproj" rows="15" cols="50" placeholder="Décrivez ici un ou plusieurs projets que vous avez fait par le passé..."></textarea>
+            </div>
         </fieldset>
         <div class="formcandi"><input type="submit" value="Envoyer"></div>
     </form>
