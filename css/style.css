@@ -80,8 +80,10 @@ h1 {
 
 .question {
     background: linear-gradient(to bottom right, black, #0447B5, black);
+}
 
-
-main{
-    margin-top: 54px;
+@media screen and (max-width: 1374px) {
+    main {
+        margin-top: 54px;
+    }
 }
