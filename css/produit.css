@@ -4,7 +4,7 @@
 
 .sliders {
     width: calc(500px * 4);
-    animation: glisse 30s infinite;
+    animation: glisse 50s infinite;
 }
 
 .slider {
