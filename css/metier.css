@@ -1,27 +1,59 @@
-
-.choixmetier{
+.choixmetier {
     background-color: #0447B5;
     border-radius: 10px;
     height: 30px;
     width: 250px;
-    text-align:center;
+    text-align: center;
 }
 
-.choixmetier a:visited{
-    color : white;
+.choixmetier a:visited {
+    color: white;
 }
 
-
-.choixmetier{
+.choixmetier {
     display: inline-block;
     margin-left: 5px;
     margin-right: 5px;
     width: 300px;
     height: 50px;
-    color : white;    
-    text-decoration:none;
+    color: white;
+    text-decoration: none;
 }
 
-.choixmetier div{
+.choixmetier div {
     transform: translateY(50%);
+}
+
+.formcandi {
+    text-align: center;
+}
+
+.pagerj {
+    display: flex;
+    justify-content: center;
+}
+
+.pagerj>div {
+    width: 70%;
+    background-color: gray;
+    box-shadow: 10px 5px 5px black;
+    text-align: left;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#baspgrj {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#contactrj {
+    text-align: left;
+}
+
+#contactrj>p {
+    margin-left: 5px;
 }
