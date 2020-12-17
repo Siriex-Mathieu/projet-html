@@ -53,6 +53,7 @@ nav > ul > li :hover{
     height:150px;
   }
   .burger {
+    z-index: 10;
     display: block;
     background: linear-gradient(to bottom right ,rgb(6,135,255),rgb(2,73,151));
     width: 100%;
