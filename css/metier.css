@@ -7,20 +7,21 @@
     text-align:center;
 }
 
-.choixmetier a {
-    color : white;    
-    text-decoration:none;
-}
-
 .choixmetier a:visited{
     color : white;
 }
 
-.menuchoixmetier {
-    list-style-type:none;
+
+.choixmetier{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 300px;
+    height: 50px;
+    color : white;    
+    text-decoration:none;
 }
 
-.menumetier{
-    text-align:center;
-    position: fixed;
+.choixmetier div{
+    transform: translateY(50%);
 }
