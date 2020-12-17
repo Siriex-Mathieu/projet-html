@@ -109,6 +109,7 @@ nav > ul > li :hover{
     transition: all 0.4s ease-in-out;
     box-sizing: border-box;
     color: white;
+    z-index: 10;
   }
   .menu.ouvert {
     display: block;
