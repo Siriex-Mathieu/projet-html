@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/menuStyle.css">
     <link rel="stylesheet" type="text/css" href="../css/jeux.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../javascript/menu.js"></script>
 </head>
 <body>
 <header>
@@ -21,8 +22,24 @@
             <li><a href="../nousRejoindre.html">Nous Rejoindre </a></li>
             <li><a href="../faq.html">FAQ</a></li>
         </ul>
+        <div class="burger" onclick="afficherMenu()">
+            <span class="burger-top"></span>
+            <span class="burger-middle"></span>
+            <span class="burger-bottom"></span>
+        </div>
+        <div id="leMenu" class="menu">
+            <ul>
+                <li><a href="../produit.html">Produit</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../equipe.html">Equipe</a></li>
+                <li><a href="../presse.html">Presse</a></li>
+                <li><a href="../nousRejoindre.html">Nous Rejoindre </a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
+<main>
 <h1>Jeux 3</h1>
 <img class="slide" src="../image/jeu 3.jpg" width="500" height="700"/>
 <p id="presentation">Fusce elementum orci nisl, sit amet commodo libero sodales vel. In ultrices eget lorem eget
@@ -36,5 +53,6 @@
 <div class="sautdeligne">
     <a href="../produit.html"><button class="retour" type="button">Retour</button></a>
 </div>
+</main>
 </body>
 </html>
