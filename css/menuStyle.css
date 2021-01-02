@@ -1,5 +1,5 @@
-nav {
-    max-width: 1000px;
+nav > * {
+  z-index: 10;
 }
 nav > ul{
   padding: 0px;
@@ -46,13 +46,12 @@ nav > ul > li :hover{
   display:none;
 }
 
-@media screen and (max-width: 1374px){ 
+@media screen and (max-width: 1000px){ 
   nav > ul{
     display:none;
     height:150px;
   }
   .burger {
-    z-index: 10;
     display: block;
     background: linear-gradient(to bottom right ,rgb(6,135,255),rgb(2,73,151));
     width: 100%;
@@ -97,24 +96,24 @@ nav > ul > li :hover{
     width: 28px
   }
   .menu{
-    left:-100%;
-    display: block;
     width: 100%;
-    background: black;
-    height: auto;
+    left:-100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background: rgba(0,0,0,0.05);
     top: 54px;
     bottom: 0;
     position: fixed;
     transition: all 0.4s ease-in-out;
     box-sizing: border-box;
     color: white;
-    z-index: 10;
   }
   .menu.ouvert {
-    display: block;
-    width: 100%;
-    background: rgba(0,0,0,0.85);
-    height: auto;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
     top: 54px;
     left:0;
     bottom: 0;
@@ -123,8 +122,8 @@ nav > ul > li :hover{
     box-sizing: border-box;
     color: white;
   }
-
   .menu li{
+    flex-grow:1;
     list-style-type: none;
   }
   .menu li:hover{
@@ -133,7 +132,9 @@ nav > ul > li :hover{
     border-bottom:0px;
   }
   .menu ul{
+    max-height: 100%;
     padding:0;
+    padding-bottom: 54px;
   }
 
   .menu a{
