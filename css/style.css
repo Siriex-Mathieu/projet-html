@@ -23,6 +23,24 @@ h1 {
     background: linear-gradient(to bottom right, black, #0447B5, black);
 }
 
+button:hover{
+    -webkit-transform:scale(1.2);
+    transition: all 0.4s ease;
+}
+
+main {
+    margin-top:50px;
+    max-width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+main > * {
+    background-color:black;
+    box-shadow: 0px 0px 10px 4px black;
+    max-width: 100%;
+}
+
 .sautdeligne {
     style: "white-space:pre";
 }
@@ -96,18 +114,7 @@ h1 {
     max-width: 100%;
 }
 
-main {
-    margin-top:50px;
-    max-width: 1000px;
-    margin-left:auto;
-    margin-right:auto;
-}
-main > * {
-    background-color:black;
-    box-shadow: 0px 0px 10px 4px black;
-    max-width: 100%;
-}
-@media screen and (max-width: 1374px) {
+@media screen and (max-width: 1384px) {
     main {
         margin-top: 54px;
     }

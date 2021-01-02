@@ -46,7 +46,7 @@ nav > ul > li :hover{
   display:none;
 }
 
-@media screen and (max-width: 1000px){ 
+@media screen and (max-width: 1384px){ 
   nav > ul{
     display:none;
     height:150px;

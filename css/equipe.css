@@ -1,3 +1,10 @@
+/*fix pour le background par arthur*/
+main > * {
+    background-color:transparent;
+    box-shadow: none;
+    max-width: 100%;
+}/*fix pour le responsive design par arthur*/
+
 .MiseForme {
     text-align: center;
     font-family: "googlesans";
@@ -5,8 +12,6 @@
     color: black;
     
  }
-   
- 
 
 .images {
     margin: 10px;
