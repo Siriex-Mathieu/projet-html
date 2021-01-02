@@ -82,11 +82,9 @@ h1 {
     background: linear-gradient(to bottom right, black, #0447B5, black);
 }
 
-<<<<<<< Updated upstream
 @media screen and (max-width: 1374px) {
     main {
         margin-top: 54px;
     }
 }
-=======
->>>>>>> Stashed changes
+
