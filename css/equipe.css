@@ -1,0 +1,46 @@
+.MiseForme {
+    text-align: center;
+    font-family: "googlesans";
+    font-size: 20px;
+    color: black;
+    
+ }
+   
+ 
+
+.images {
+    margin: 10px;
+    color: white;
+    transition: transform .2s;
+}
+
+.images:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portrait {
+    
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 100px;
+    background: linear-gradient(to bottom right, black, #0447B5 ,black);
+
+    border-width:2px;
+    border-color: black;
+    border-style: groove;
+    -moz-border-radius: 10px 0;
+    -webkit-border-radius: 10px 0;
+    border-radius:10px 0;
+}
+
+#titre1 {
+font-size: large;
+
+}
+
+.paragraphe {
+    background-color: black;
+   
+}
