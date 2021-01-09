@@ -2,39 +2,46 @@ nav > * {
   z-index: 10;
 }
 nav > ul{
+  display:flex;
+  flex-direction: row;
   padding: 0px;
   margin: 0px;
+  justify-content:center;
   list-style-type:none;
-  background: linear-gradient(to bottom right, black, #0447B5 ,black);
+  background: linear-gradient(to bottom right ,rgb(6,135,255),rgb(2,73,151));
   text-align:center;
   position: fixed;
   top: 0px;
   left: 0px;
   width:100%;
+  height:46px;
   box-shadow: 0 4px 12px -2px black;
 
 }
 
 nav > ul > li{
-  display:inline-block;
-  width:224.8px;
-  position: relative;
+  display:flex;
+  flex-grow: 1;
+  justify-content: center;
   border-right:0px solid #CCCCCC;
-  text-align:center;
-  line-height:50px;
+
 }
 
 nav a{
-  display:block;
+  box-sizing: content-box;
+  width:100%;  
+  text-align:center;
+  line-height: 46px;
   text-decoration:none;
   color:#FFFFFF;
   text-transform: uppercase;
 }
 
-nav > ul > li :hover{
+nav > ul > li > a:hover{  
   background-color: rgba(188, 188, 188, 0.3);
-  font-size: 15px;
   border-bottom: 1px solid white;
+  -webkit-transform:width(1.2);
+  transition: all 0.3s;
 }
 
 }
@@ -52,7 +59,7 @@ nav > ul > li :hover{
     height:150px;
   }
   .burger {
-    display: block;
+    display: flex;
     background: linear-gradient(to bottom right ,rgb(6,135,255),rgb(2,73,151));
     width: 100%;
     height: 54px;
@@ -67,7 +74,7 @@ nav > ul > li :hover{
   }
       
   .burger > * {
-    display: block;
+    display: flex;
     width: 34px;
     height: 3px;
     background: white;
@@ -96,6 +103,7 @@ nav > ul > li :hover{
     width: 28px
   }
   .menu{
+    justify-content: center;
     width: 100%;
     left:-100%;
     display: flex;
@@ -132,12 +140,13 @@ nav > ul > li :hover{
     border-bottom:0px;
   }
   .menu ul{
+    justify-content: center;
     max-height: 100%;
     padding:0;
     padding-bottom: 54px;
   }
 
   .menu a{
-    padding:54px;
+    padding:0px;
   }
 }
