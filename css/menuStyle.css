@@ -2,8 +2,11 @@ nav > * {
   z-index: 10;
 }
 nav > ul{
-  padding: 0px;
+  display:flex;
+  flex-direction: row;
+  padding: 10px;
   margin: 0px;
+  justify-content:center;
   list-style-type:none;
   background: linear-gradient(to bottom right, black, #0447B5 ,black);
   text-align:center;
@@ -16,16 +19,13 @@ nav > ul{
 }
 
 nav > ul > li{
-  display:inline-block;
   width:224.8px;
-  position: relative;
   border-right:0px solid #CCCCCC;
-  text-align:center;
-  line-height:50px;
+
 }
 
 nav a{
-  display:block;
+  text-align:center;
   text-decoration:none;
   color:#FFFFFF;
   text-transform: uppercase;
@@ -52,7 +52,7 @@ nav > ul > li :hover{
     height:150px;
   }
   .burger {
-    display: block;
+    display: flex;
     background: linear-gradient(to bottom right ,rgb(6,135,255),rgb(2,73,151));
     width: 100%;
     height: 54px;
@@ -67,7 +67,7 @@ nav > ul > li :hover{
   }
       
   .burger > * {
-    display: block;
+    display: flex;
     width: 34px;
     height: 3px;
     background: white;
@@ -96,6 +96,7 @@ nav > ul > li :hover{
     width: 28px
   }
   .menu{
+    justify-content: center;
     width: 100%;
     left:-100%;
     display: flex;
@@ -132,12 +133,13 @@ nav > ul > li :hover{
     border-bottom:0px;
   }
   .menu ul{
+    justify-content: center;
     max-height: 100%;
     padding:0;
     padding-bottom: 54px;
   }
 
   .menu a{
-    padding:54px;
+    padding:0px;
   }
 }
