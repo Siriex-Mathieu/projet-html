@@ -1,27 +1,90 @@
+/*fix pour le background par arthur*/
+main > * {
+    background-color:transparent;
+    box-shadow: none;
+    max-width: 100%;
+}/*fix pour le responsive design par arthur*/
 
-.choixmetier{
+.choixmetier {
+    flex-grow: 1;
+    margin-right: 10px;
+    margin-left: 10px;
     background-color: #0447B5;
     border-radius: 10px;
     height: 30px;
-    width: 250px;
-    text-align:center;
-}
-
-.choixmetier a:visited{
-    color : white;
-}
-
-
-.choixmetier{
-    display: inline-block;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 300px;
+    max-width: 250px;
+    text-align: center;
+    min-width: 200px;
     height: 50px;
-    color : white;    
-    text-decoration:none;
+    color: white;
+    text-decoration: none;
 }
 
-.choixmetier div{
+.choixmetier a:visited {
+    color: white;
+}
+
+.choixmetier:hover {
+    -webkit-transform:scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.choixmetier div {
     transform: translateY(50%);
+}
+
+.formcandi {
+    text-align: center;
+}
+
+.pagerj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pagerj > div {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1384px){
+    .pagerj > div{
+        flex-direction: column;
+        justify-content: center;
+        margin:auto;
+    }
+    .choixmetier{
+        margin-top: 10px;
+    }
+}
+
+.pagerj > div:first-child{
+    display:flex;
+    flex-direction:column; 
+    background-color: gray;
+    box-shadow: 10px 5px 5px black;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#baspgrj {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+#contactrj {
+    text-align: left;
+    margin-left: 20px;
+}
+
+#contactrj>p {
+    margin-left: 5px;
 }
