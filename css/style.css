@@ -7,7 +7,7 @@ body {
     background: fixed;
     background-color: black;
     background-size: 120%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-image: url("../image/test-background-2.jpg");
     font-family: "Gotham",Montserrat,sans-serif;
 }
