@@ -58,13 +58,16 @@ nav > ul > li > a:hover{
 
 /*code du menu déroulant:*/
 .sous{
+  z-index: 6;
   display: none;
   box-shadow: 0px 1px 2px #CCC;
   background-color: gray;
+  position:relative;
 }
 .deroulant:hover .sous{
   display: block;
   position: relative;
+
 }
 .sous li{
 
