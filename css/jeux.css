@@ -1,0 +1,11 @@
+.retour {
+    color: #FFFFFF;
+}
+a:hover{
+    color: #FFFFFF;
+}
+button {
+    background: linear-gradient(to bottom right, black, #0447B5, black);
+    width: 100px;
+    height: 50px;
+}

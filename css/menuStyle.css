@@ -1,94 +1,176 @@
-@media screen and (max-width: 1374px){ 
-    nav{
-        height:150px;
-    }
+nav > * {
+  z-index: 10;
 }
-
-@media screen and (max-width: 914px){
-    nav{
-        height:200px;
-    }
-}
-
-
-@media screen and (max-width: 684px){
-    nav{
-        height:250px;
-    }
-}
-
-@media screen and (max-width: 456px){
-    nav{
-        height:300px;
-    }
-    .sous{
-        position:relative;
-    }
-}
-
-@media screen and (min-width: 456px){
-    .sous{
-        position: absolute;
-        margin-top:50px;
-    }
-}
-
-@media screen and (min-width: 1375px){
-    nav{
-        height:100px;
-    }
-}
-
-nav ul{
-    padding: 0px;
-    margin: 0px;
-    list-style-type:none;
-    background: linear-gradient(to bottom right, black, #0447B5 ,black);
-    text-align:center;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width:100%;
-    box-shadow: 0 4px 12px -2px black;
+nav > ul{
+  display:flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+  justify-content:center;
+  list-style-type:none;
+  background: linear-gradient(to bottom right ,rgb(6,135,255),rgb(2,73,151));
+  text-align:center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:46px;
+  box-shadow: 0 4px 12px -2px black;
 
 }
 
-nav ul li{
-    display:inline-block;
-    width:224.8px;
-    position: relative;
-    border-right:0px solid #CCCCC;
-    text-align:center;
-    line-height:50px;
+nav > ul > li{
+  display:flex;
+  flex-grow: 2;
+  justify-content: center;
+  border-right:0px solid #CCCCCC;
+}
+
+nav > ul > li:last-child {
+    flex-grow:1;
 }
 
 nav a{
-    display:block;
-    text-decoration:none;
-    color:#FFFFFF;
-    text-transform: uppercase;
+  box-sizing: content-box;
+  width:100%;  
+  text-align:center;
+  line-height: 46px;
+  text-decoration:none;
+  color:#FFFFFF;
+  text-transform: uppercase;
 }
 
-nav li :hover{
-    background-color: rgba(188, 188, 188, 0.3);
-    font-size: 15px;
-    border-bottom: 1px solid white;
+nav > ul > li > a:hover{  
+  background-color: rgba(188, 188, 188, 0.3);
+  border-bottom: 1px solid white;
+  -webkit-transform:width(1.2);
+  transition: all 0.3s;
 }
 
+}
+.burger{
+  display:none;
+}
+
+.menu{
+  display:none;
+}
+
+/*code du menu déroulant:*/
 .sous{
-    display: none;
-    box-shadow: 0px 1px 2px #CCC;
-    background-color: white;
-    width: 100%;
+  z-index: 6;
+  display: none;
+  box-shadow: 0px 1px 2px #CCC;
+  background-color: gray;
+  position:relative;
 }
-nav > ul li:hover .sous{
-    display: block;
+.deroulant:hover .sous{
+  display: block;
+  position: relative;
+
 }
 .sous li{
-    width: 100%;
-    text-align: center;
-}
-.sous a{
-    padding: 5px;
-}
 
+}
+/*fin code menu déroulant*/
+@media screen and (max-width: 1000px){ 
+  nav > ul{
+    display:none;
+    height:150px;
+  }
+  .burger {
+    display: flex;
+    z-index: 11;
+    background: linear-gradient(to bottom right ,rgb(6,135,255),rgb(2,73,151));
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    top: 0%;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .burger:hover {
+    cursor: pointer;
+  }
+      
+  .burger > * {
+    display: flex;
+    width: 34px;
+    height: 3px;
+    background: white;
+    margin-left: 10px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+  }
+
+  .burger-top {
+    margin-top: 17px;
+  }
+
+  .burger-middle {
+    margin-top: 26px;
+  }
+
+  .burger-bottom {
+    margin-top: 35px;
+  }
+
+  .burger:hover .burger-top {
+    width: 22px
+  }
+
+  .burger:hover .burger-middle {
+    width: 28px
+  }
+  .menu{
+    justify-content: center;
+    width: 100%;
+    left:-100%;
+    display: flex;
+    background: rgba(0,0,0,0.05);
+    top: 54px;
+    bottom: 0;
+    position: fixed;
+    transition: all 0.4s ease-in-out;
+    box-sizing: border-box;
+    color: white;
+  }
+  .menu.ouvert {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
+    top: 54px;
+    left:0;
+    bottom: 0;
+    position: fixed;
+    transition: all 0.4s ease-in-out;
+    box-sizing: border-box;
+    color: white;
+  }
+  .menu li{
+    display:flex;
+    flex-grow:1;
+    list-style-type: none;
+    justify-content: center;
+  }
+  .menu li:hover{
+    background: linear-gradient(to left,rgb(6,135,255),rgb(6,135,255));
+    border-bottom:0px;
+  }
+  .menu ul{
+    display:flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding:0;
+    box-sizing: content-box;
+  }
+
+  .menu a{
+    line-height: 15vh;
+    text-align: middle;
+  }
+}

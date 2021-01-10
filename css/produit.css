@@ -1,0 +1,55 @@
+.slide {
+    float: left;
+}
+
+.sliders {
+    width: calc(500px * 4);
+    animation: glisse 50s infinite;
+}
+
+.slider {
+    max-width: 100%;
+    width: 500px;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+.sliders:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-500px);
+    }
+    50% {
+        transform: translateX(-1000px);
+    }
+    75% {
+        transform: translateX(-1500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.acheter {
+    color: #FFFFFF;
+}
+
+button {
+    background: linear-gradient(to bottom right, black, #0447B5, black);
+    width: 100px;
+    height: 50px;
+}
+
+/*Pour que le menu affiche ou l'on est: */
+nav > ul > li:first-child > a{
+    border-bottom: 1px solid white;
+}

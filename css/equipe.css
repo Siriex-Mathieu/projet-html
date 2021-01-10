@@ -1,0 +1,75 @@
+/*fix pour le background par arthur*/
+main > * {
+    background-color:transparent;
+    box-shadow: none;
+    max-width: 100%;
+}
+
+.images img{
+    border-radius: 5px;
+}
+
+.executive-team{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.even-rows{ /*cette classe sert pour la mise en page, elle permet de garder les "portraits" deux à deux et de ne pas en avoir trois sur une ligne*/
+    display:flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.MiseForme {
+    text-align: center;
+    font-family: "googlesans";
+    font-size: 20px;
+    color: black;
+    
+ }
+
+.images {
+    margin: 10px;
+    color: white;
+    transition: transform .2s;
+}
+
+.images:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portrait {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top:30px;
+    background: linear-gradient(to bottom right, black, #0447B5 ,black);
+    border-width:2px;
+    border-color: black;
+    border-style: groove;
+    -moz-border-radius: 10px 0;
+    -webkit-border-radius: 10px 0;
+    border-radius:10px 0;
+}
+
+.paragraphe {
+    background-color: black;  
+}
+
+.fond-1{
+    padding-bottom: 6px;
+}
+#titre1 {
+font-size: large;
+
+}
+
+/*Pour que le menu affiche ou l'on est: */
+nav > ul > li:nth-child(3) > a{
+    border-bottom: 1px solid white;
+}
