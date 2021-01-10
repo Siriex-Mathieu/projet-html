@@ -5,9 +5,10 @@ body {
     text-align: center;
     color: white;
     background: fixed;
-    background-size: 100%;
-    background-repeat: repeat;
-    background-image: url("../image/fond2.png");
+    background-color: black;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-image: url("../image/test-background-2.jpg");
     font-family: "Gotham",Montserrat,sans-serif;
 }
 
