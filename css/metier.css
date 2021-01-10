@@ -53,10 +53,18 @@ main > * {
     padding-right: 10px;
 }
 
-@media screen and (max-width: 1384px){
+@media screen and (max-width: 1000px){
     .pagerj > div{
         flex-direction: column;
         justify-content: center;
+        margin:auto;
+    }
+    #baspgrj{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #baspgrj > *{
         margin:auto;
     }
     .choixmetier{
