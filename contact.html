@@ -6,6 +6,7 @@
     <title>Casque VR | Contact</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/menuStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="javascript/menu.js"></script>
 </head>
@@ -31,13 +32,22 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="equipe.html">Equipe</a></li>
                 <li><a href="presse.html">Presse</a></li>
-                <li><a href="nousRejoindre.html">Nous Rejoindre </a></li>
+                <li class="deroulant"><a href="nousRejoindre.html">Nous Rejoindre </a>
+                <ul class="sous">
+                    <li><a href="./nousrejoindre/developpeur.html">Developpeur</a></li>
+                    <li><a href="./nousrejoindre/datamanager.html">Data manager</a></li>
+                    <li><a href="./nousrejoindre/webdesigner.html">Web designer</a></li>
+                </ul>
+            </li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
         </div>
     </nav>
 </header>
 <main>
+<div class="title">
+    <img src="image/nomsite.png" width="500" height="100" alt=""/>
+</div>
 <form action="sendToDataBase.php" method="get">
     <h1>Contactez-nous</h1>
     <div id="ligne"></div>
