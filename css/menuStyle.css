@@ -57,20 +57,41 @@ nav > ul > li > a:hover{
 }
 
 /*code du menu déroulant:*/
+.deroulant > a::after{
+  content:"  ▼";
+  font-size:12px;
+}
 .sous{
-  z-index: 6;
-  display: none;
+  width: initial;
+  padding:0;
+  margin-top: 46px;
+  list-style-type:none;
+  /*display: none;*/
   box-shadow: 0px 1px 2px #CCC;
-  background-color: gray;
-  position:relative;
+  background-color: white;
+  position:absolute;
+  z-index: 9;
 }
 .deroulant:hover .sous{
   display: block;
-  position: relative;
+  position: absolute;
 
 }
-.sous li{
 
+.sous li{
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+.sous a{
+  color: black;
+  padding:10px;
+  border-bottom: none;
+  padding: auto;
+}
+.sous a:hover{
+  border-bottom: none;
+  background-color: rgba(188, 188, 188, 0.3);
 }
 /*fin code menu déroulant*/
 @media screen and (max-width: 1000px){ 
