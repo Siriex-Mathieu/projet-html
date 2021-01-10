@@ -24,6 +24,7 @@ nav > ul > li{
   flex-grow: 2;
   justify-content: center;
   border-right:0px solid #CCCCCC;
+  z-index: 1000;
 }
 
 nav > ul > li:last-child {
@@ -62,32 +63,36 @@ nav > ul > li > a:hover{
   font-size:12px;
 }
 .sous{
-  width: initial;
+  display:flex;
+  min-width:250px;
+  flex-direction: column;
   padding:0;
   margin-top: 46px;
   list-style-type:none;
-  /*display: none;*/
+  display: none;
   box-shadow: 0px 1px 2px #CCC;
   background-color: white;
   position:absolute;
-  z-index: 9;
+  z-index: 5;
 }
 .deroulant:hover .sous{
-  display: block;
+  display: flex;
   position: absolute;
 
 }
 
 .sous li{
+  display: flex;
   float: none;
   width: 100%;
   text-align: left;
 }
 .sous a{
+  width: 100%;
   color: black;
   padding:10px;
   border-bottom: none;
-  padding: auto;
+  line-height: 30px;
 }
 .sous a:hover{
   border-bottom: none;
