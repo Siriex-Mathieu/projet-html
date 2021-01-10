@@ -105,7 +105,7 @@ main > * {
     max-width: 100%;
 }
 
-#ligne {
+.ligne {
     height: 5px;
     width: 100%;
     max-width: 300px;
