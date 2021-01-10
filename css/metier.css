@@ -96,3 +96,8 @@ main > * {
 #contactrj>p {
     margin-left: 5px;
 }
+
+/*Pour que le menu affiche ou l'on est: */
+nav > ul > li:nth-child(5) > a{
+    border-bottom: 1px solid white;
+}

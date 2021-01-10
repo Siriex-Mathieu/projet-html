@@ -5,9 +5,10 @@ body {
     text-align: center;
     color: white;
     background: fixed;
-    background-size: 100%;
+    background-color: black;
+    background-size: 120%;
     background-repeat: repeat;
-    background-image: url("../image/fond2.png");
+    background-image: url("../image/test-background-2.jpg");
     font-family: "Gotham",Montserrat,sans-serif;
 }
 
@@ -140,13 +141,14 @@ main > * {
 } 
  
 ::-webkit-scrollbar-thumb {
-      background-color: rgba(6,115,255, 0.4); 
+      background-color: rgba(6,115,255, 0.5); 
 }
  
 ::-webkit-scrollbar-button {
       height: 0px;
+      width: 0px;
 }
  
 ::-webkit-scrollbar-corner {
-      background-color: transparent;
+      background-color: rgb(35,35,35);
 } 

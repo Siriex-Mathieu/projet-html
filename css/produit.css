@@ -48,3 +48,8 @@ button {
     width: 100px;
     height: 50px;
 }
+
+/*Pour que le menu affiche ou l'on est: */
+nav > ul > li:first-child > a{
+    border-bottom: 1px solid white;
+}

@@ -19,7 +19,13 @@
             <li><a href="../contact.html">Contact</a></li>
             <li><a href="../equipe.html">Equipe</a></li>
             <li><a href="../presse.html">Presse</a></li>
-            <li><a href="../nousRejoindre.html">Nous Rejoindre </a></li>
+            <li class="deroulant"><a href="nousRejoindre.html">Nous Rejoindre </a>
+                <ul class="sous">
+                    <li><a href="./nousrejoindre/developpeur.html">Developpeur</a></li>
+                    <li><a href="./nousrejoindre/datamanager.html">Data manager</a></li>
+                    <li><a href="./nousrejoindre/webdesigner.html">Web designer</a></li>
+                </ul>
+            </li>
             <li><a href="../faq.html">FAQ</a></li>
         </ul>
         <div class="burger" onclick="afficherMenu()">
@@ -40,7 +46,7 @@
     </nav>
 </header>
 <main>
-<h1>Jeux 2</h1>
+<h1>Jeu 2</h1>
 <img class="slide" src="../image/jeu2.jpeg" width="500" height="700" alt=""/>
 <p id="presentation">Fusce elementum orci nisl, sit amet commodo libero sodales vel. In ultrices eget lorem eget
     convallis. Integer pulvinar elementum consectetur. Curabitur ac mi vel tortor commodo efficitur. Morbi facilisis
@@ -51,7 +57,7 @@
     porta. Integer eget dolor turpis. Nam commodo dui vel risus elementum condimentum. Phasellus at pharetra neque.
     Phasellus sapien arcu, aliquam nec ullamcorper in, tincidunt vitae libero.</p>
 <div class="sautdeligne">
-    <a href="../produit.html"><button class="retour" type="button">Retour</button></a>
+    <button onclick="window.location.href = '../produit.html';" class="acheter" type="button">Retour</button>
 </div>
 </main>
 </body>
