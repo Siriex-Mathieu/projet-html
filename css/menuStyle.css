@@ -21,10 +21,13 @@ nav > ul{
 
 nav > ul > li{
   display:flex;
-  flex-grow: 1;
+  flex-grow: 2;
   justify-content: center;
   border-right:0px solid #CCCCCC;
+}
 
+nav > ul > li:last-child {
+    flex-grow:1;
 }
 
 nav a{
@@ -141,7 +144,6 @@ nav > ul > li > a:hover{
   }
   .menu ul{
     justify-content: center;
-    max-height: 100%;
     padding:0;
     padding-bottom: 54px;
   }

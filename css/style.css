@@ -8,6 +8,7 @@ body {
     background-size: 100%;
     background-repeat: repeat;
     background-image: url("../image/fond2.png");
+    font-family: "Gotham",Montserrat,sans-serif;
 }
 
 
@@ -101,6 +102,10 @@ main > * {
     color: white;
 }
 
+.fond-1{
+    background-color: rgb(0,0,0);
+}
+
 .question {
     background: linear-gradient(to bottom right, black, #0447B5, black);
 }
@@ -108,6 +113,7 @@ main > * {
 .title{
     background:none;
     box-shadow: none;
+    padding-top: 10px;
 }
 
 .title > img{
@@ -124,11 +130,11 @@ main > * {
       width: 15px;
 }
 ::-webkit-scrollbar-track {
-      background-color: rgb(2,53,100);
+      background-color: rgb(35,35,35);
 } 
  
 ::-webkit-scrollbar-thumb {
-      background-color: rgba(6,135,255, 0.4); 
+      background-color: rgba(6,115,255, 0.4); 
 }
  
 ::-webkit-scrollbar-button {
