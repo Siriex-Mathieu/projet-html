@@ -37,13 +37,7 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="equipe.html">Equipe</a></li>
                 <li><a href="presse.html">Presse</a></li>
-                <li class="deroulant"><a href="nousRejoindre.html">Nous Rejoindre </a>
-                <ul class="sous">
-                    <li><a href="./nousrejoindre/developpeur.html">Developpeur</a></li>
-                    <li><a href="./nousrejoindre/datamanager.html">Data manager</a></li>
-                    <li><a href="./nousrejoindre/webdesigner.html">Web designer</a></li>
-                </ul>
-            </li>
+                <li><a href="nousRejoindre.html">Nous Rejoindre </a>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
         </div>
@@ -58,21 +52,24 @@
     <div id="ligne"></div>
     <fieldset>
         <legend>Informations personnelles*</legend>
-        <div>
-            <label for="surname">Nom* : </label>
-            <input id="surname" name="uname" type="text" required>
+        <div class="InputAddOn">
+            <span for="surname" class="InputAddOn-item">Nom*</span>
+            <input id="surname" class="InputAddOn-field" placeholder="Your Name" name="uname" type="text" required>
         </div>
-        <div>
-            <label for="firstname">Prénom* : </label>
-            <input id="firstname" name="firstname" type="text" required>
+
+        <div class="InputAddOn">
+            <span for="firstname" class="InputAddOn-item">Prénom*</span>
+            <input id="firstname" class="InputAddOn-field" placeholder="Your Firstname" name="firstname" type="text" required>
         </div>
-        <div>
-            <label for="email">E-mail* : </label>
-            <input placeholder=yourmail@domain.com type="email" name="email" required>
+
+        <div class="InputAddOn">
+            <span for="email" class="InputAddOn-item">E-mail*</span>
+            <input class="InputAddOn-field" placeholder="yourmail@domain.com" type="email" name="email" type="text" required>
         </div>
-        <div>
-            <label for="pays-select">Pays d'origine* : </label>
-            <select name="pays">
+
+        <div class="InputAddOn">
+            <span for="pays-select" class="InputAddOn-item">Pays d'origine*</span>
+            <select name="pays" class="InputAddOn-item">
                 <option value="France" selected="selected">France</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Afrique_Centrale">Afrique_Centrale</option>
@@ -304,9 +301,10 @@
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
         </div>
-        <div>
-            <label for="zip">Code Postal* : </label>
-            <input id="zip" name="zipcode" type="text" required>
+
+        <div class="InputAddOn">
+            <span for="zip" class="InputAddOn-item">Code Postal*</span>
+            <input id="zip" class="InputAddOn-field" placeholder="XXXXXXX" type="text" name="zipcode" type="text" required>
         </div>
     </fieldset>
     <fieldset>
