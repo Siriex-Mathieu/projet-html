@@ -69,3 +69,7 @@ font-size: large;
 
 }
 
+/*Pour que le menu affiche ou l'on est: */
+nav > ul > li:nth-child(3) > a{
+    border-bottom: 1px solid white;
+}
