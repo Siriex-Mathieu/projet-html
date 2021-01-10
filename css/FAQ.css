@@ -2,3 +2,6 @@
 nav > ul > li:last-child > a{
     border-bottom: 1px solid white;
 }
+.fond-1{
+	background-color: transparent;
+}
