@@ -18,7 +18,13 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="equipe.html">Equipe</a></li>
             <li><a href="presse.html">Presse</a></li>
-            <li><a href="nousRejoindre.html">Nous Rejoindre </a></li>
+            <li class="deroulant"><a href="nousRejoindre.html">Nous Rejoindre </a>
+                <ul class="sous">
+                    <li><a href="./nousrejoindre/developpeur.html">Developpeur</a></li>
+                    <li><a href="./nousrejoindre/datamanager.html">Data manager</a></li>
+                    <li><a href="./nousrejoindre/webdesigner.html">Web designer</a></li>
+                </ul>
+            </li>
             <li><a href="faq.html">FAQ</a></li>
         </ul>
         <div class="burger" onclick="afficherMenu()"> 
@@ -38,25 +44,29 @@
         </div>
     </nav>
 </header>
-
-<h1>Casque de réalité virtuel augmenté</h1>
-<div class="sautdeligne">
-    <img src="image/casque.png" height="149" width="320"/>
+<main>
+<div class="title">
+    <img src="image/nomsite.png" width="500" height="100" alt="casque vr .com" />
 </div>
-<h2>Vous rêvez de jouer allonger dans un monde fanstastique.</h2>
-<h2>C'est maintenant possible.</h2>
-<a href="http://codegamejam.extragames.fr/"><button class="acheter" type="button">Acheter</button></a>
-<h1>Voici les jeux disponible</h1>
-
+<div class="fond-1">
+    <h1>Casque de réalité virtuelle augmenté</h1>
+    <div class="sautdeligne">
+        <img src="image/casque.png" height="149" width="320" alt=""/>
+    </div>
+    <h2>Vous rêvez de jouer allongé dans un monde fanstastique ?</h2>
+    <h2>C'est maintenant possible !</h2>
+    <button onclick="window.location.href = 'http://codegamejam.extragames.fr/';" class="acheter" type="button">Acheter</button>
+    <h1>Jeux disponibles</h1>
+</div>
 <div class="slider">
     <div class="sliders">
-        <a href="jeux/jeux1.html"><img class="slide" src="image/jeu 1.jpg" width="500" height="700"/></a>
-        <a href="jeux/jeux2.html"><img class="slide" src="image/jeu 2.jpeg" width="500" height="700"/></a>
-        <a href="jeux/jeux3.html"><img class="slide" src="image/jeu 3.jpg" width="500" height="700"/></a>
-        <a href="jeux/jeux4.html"><img class="slide" src="image/jeu 4.jpg" width="500" height="700"/></a>
+        <a href="jeux/jeu1.html"><img class="slide" src="image/jeu1.jpg" width="500" height="700" alt=""/></a>
+        <a href="jeux/jeu2.html"><img class="slide" src="image/jeu2.jpeg" width="500" height="700" alt=""/></a>
+        <a href="jeux/jeu3.html"><img class="slide" src="image/jeu3.jpg" width="500" height="700" alt=""/></a>
+        <a href="jeux/jeu4.html"><img class="slide" src="image/jeu4.jpg" width="500" height="700" alt=""/></a>
     </div>
 </div>
 
-
+</main>
 </body>
 </html>

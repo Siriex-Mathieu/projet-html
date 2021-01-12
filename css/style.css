@@ -1,14 +1,21 @@
 body {
+    margin:0px; /* fix pour le menu, voir avec main pour les espaces */
+    height: auto;
+    width: 100%;
     text-align: center;
     color: white;
-    background-size: 100%;
+    background: fixed;
+    background-color: black;
+    background-size: 120%;
     background-repeat: repeat;
-    background-position: fixed;
-    background-image: url("../image/fond2.png");
+    background-image: url("../image/test-background-2.jpg");
+    font-family: "Gotham",Montserrat,sans-serif;
 }
 
 
-/* comment */
+/* Le css ci-dessous est applicable à tout le site et peut servir a faire des modifications rapidement sur tout le site,
+ essayez de pas trop passer outre en utilisant abusivement des autres feuilles css, sinon je dois repasser partout et c'est 
+ très long */
 
 h3 {
     color: white;
@@ -18,50 +25,52 @@ h1 {
     background: linear-gradient(to bottom right, black, #0447B5, black);
 }
 
+button:hover{
+    -webkit-transform:scale(1.2);
+    transition: all 0.4s ease;
+}
+
+main {
+    margin-top:50px;
+    max-width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+main > * {
+    background-color:black;
+    box-shadow: 0px 0px 10px 4px black;
+    max-width: 100%;
+}
+
 .sautdeligne {
     style: "white-space:pre";
-}
-
-#ligne {
-    height: 5px;
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 30px;
-    background: linear-gradient(to bottom right, black, #0447B5, black);
-    border-radius: 30%;
-    margin: auto;
-}
-
-#presentation {
-    font-size: 20px;
-    margin: 30px 5%;
-    text-align: center;
 }
 
 .espacegros {
     height: 50px;
 }
 
-#map {
-    width: 300px;
-    height: 225px;
-}
-
 .actualites {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .actualites .actu {
     background: linear-gradient(to bottom right, black, #0447B5, black);
-    height: 200px;
-    margin: 50px 2%;
-    flex: 1;
-    transition: transform .2s;
+    box-sizing: border-box;
+    flex: none;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px; 
+    transition: transform 0.2s;
 }
 
 .actualites .actu:hover {
     transform: scale(1.1);
-    cursor: pointer;
+    
 }
 
 .actualites .actu h2 {
@@ -78,6 +87,68 @@ h1 {
     color: white;
 }
 
+.fond-1{
+    background-color: rgb(0,0,0);
+}
+
 .question {
     background: linear-gradient(to bottom right, black, #0447B5, black);
+    margin-bottom: 40px;
 }
+
+.title{
+    background:none;
+    box-shadow: none;
+    padding-top: 10px;
+}
+
+.title > img{
+    max-width: 100%;
+}
+
+.ligne {
+    height: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom right, black, #0447B5, black);
+    border-radius: 30%;
+    margin: auto;
+}
+
+#map {
+    width: 300px;
+    height: 225px;
+}
+
+#presentation {
+    font-size: 20px;
+    margin: 30px 5%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1384px) {
+    main {
+        margin-top: 54px;
+    }
+}
+
+::-webkit-scrollbar {
+      width: 15px;
+}
+::-webkit-scrollbar-track {
+      background-color: rgb(35,35,35);
+} 
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(6,115,255, 0.5); 
+}
+ 
+::-webkit-scrollbar-button {
+      height: 0px;
+      width: 0px;
+}
+ 
+::-webkit-scrollbar-corner {
+      background-color: rgb(35,35,35);
+} 
